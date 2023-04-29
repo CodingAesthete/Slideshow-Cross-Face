@@ -13,11 +13,7 @@
     if (currentImage == imagesArr.length) {
       currentImage = 0;
     }
-    //document.getElementById('myimage').src = imagesArr[currentImage];
-    const newSlide = document.createElement('img');
-    newSlide.src=`images/${imagesArr[currentImage]}`
-    newSlide.className = 'fadeinimg';
-    container.appendChild(newSlide);
+    swapImg();
   });
 
   previousBtn.addEventListener('click', (e) => {
@@ -26,12 +22,19 @@
     if (currentImage == -1) {
       currentImage = imagesArr.length - 1;
     }
+    swapImg();
+  });
+
+  function swapImg(){
     //document.getElementById('myimage').src = imagesArr[currentImage];
     const newSlide = document.createElement('img');
     newSlide.src=`images/${imagesArr[currentImage]}`
     newSlide.className = 'fadeinimg';
     container.appendChild(newSlide);
 
-  });
-
+    if (container.children.length > 2) {
+      container.removeChild(container.children[0]);
+    }
+  }
+  
 })();
