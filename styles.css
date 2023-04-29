@@ -9,7 +9,7 @@ body{
 }
 
 #content {
-  margin: 100px auto 20px auto;
+  margin: 100px auto 0px auto;
   border: 10px solid #4C4C4C;
   width: 400px;
   height: 250px;
@@ -39,14 +39,13 @@ p{
 }
 
 #links{
-  width: 200px;
   display: flex;
-  margin: auto;
+  margin-left:420px;
 }
 button{
-  margin: 0px 10px 10px 10px;
+  margin: 0;
   background-color: rebeccapurple;
-  padding: 12px;
+  padding: 20px 77px 20px 77px;;
   cursor:pointer;
 }
 #next, #previous{
