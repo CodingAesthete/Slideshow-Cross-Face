@@ -1,3 +1,13 @@
+body, p {
+  padding:0;
+  margin:0;
+}
+
+body{
+  padding: 50px;
+  background: #717171;
+}
+
 #content {
   margin: 100px auto 20px auto;
   border: 10px solid #4C4C4C;
@@ -22,4 +32,23 @@
   } to {
     opacity: 1;
   }
+}
+
+p{
+  text-align: center;
+}
+
+#links{
+  width: 200px;
+  display: flex;
+  margin: auto;
+}
+button{
+  margin: 0px 10px 10px 10px;
+  background-color: rebeccapurple;
+  padding: 12px;
+  cursor:pointer;
+}
+#next, #previous{
+  color:white;
 }
