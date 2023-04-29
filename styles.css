@@ -1,0 +1,25 @@
+#content {
+  margin: 100px auto 20px auto;
+  border: 10px solid #4C4C4C;
+  width: 400px;
+  height: 250px;
+  position: relative;
+}
+
+#content img {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+}
+
+.fadeinimg {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
